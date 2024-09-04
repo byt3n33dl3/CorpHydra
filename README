@@ -1,25 +1,30 @@
+ _____             _____       _         
+|     |___ ___ ___|  |  |_ _ _| |___ ___ 
+|   --| . |  _| . |     | | | . |  _| .'|
+|_____|___|_| |  _|__|__|_  |___|_| |__,|
+              |_|       |___|            
 
-				  H Y D R A
+C O R P H Y D R A
 
-                      (c) 2001-2023 by van Hauser / THC
-             <vh@thc.org> https://github.com/vanhauser-thc/thc-hydra
-       many modules were written by David (dot) Maciejak @ gmail (dot) com
-                 BFG code by Jan Dlabal <dlabaljan@gmail.com>
+(c) 2001-2024 by van Hauser / THC
+<vh@thc.org> https://github.com/vanhauser-thc/thc-hydra
+many modules were written by David (dot) Maciejak @ gmail (dot) com
+BFG code by Jan Dlabal <dlabaljan@gmail.com>
 
-  		    Licensed under AGPLv3 (see LICENSE file)
+Licensed under AGPLv3 (see LICENSE file)
 
-           Please do not use in military or secret service organizations,
-                          or for illegal purposes.
-      (This is the wish of the author and non-binding. Many people working
-       in these organizations do not care for laws and ethics anyways.
-            You are not one of the "good" ones if you ignore this.)
+Please do not use in military or secret service organizations,
+or for illegal purposes.
+(This is the wish of the author and non-binding. Many people working
+in these organizations do not care for laws and ethics anyways.
+You are not one of the "good" ones if you ignore this.)
 
-           NOTE: no this is not meant to be a markdown doc! old school!
+NOTE: no this is not meant to be a markdown doc! old school!
 
 
-Hydra in the most current github state can be directly downloaded via docker:
+CorpHydra in the most current github state can be directly downloaded via docker:
 ```
-docker pull vanhauser/hydra
+docker pull vanhauser/CorpHydra
 ```
 
 
@@ -41,14 +46,14 @@ It was tested to compile cleanly on Linux, Windows/Cygwin, Solaris,
 FreeBSD/OpenBSD, QNX (Blackberry 10) and MacOS.
 
 Currently this tool supports the following protocols:
- Asterisk, AFP, Cisco AAA, Cisco auth, Cisco enable, CVS, Firebird, FTP,
- HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY,
- HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST,
- HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MEMCACHED, MONGODB, MS-SQL, MYSQL, NCP, NNTP, Oracle Listener,
- Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, Radmin, RDP, Rexec, Rlogin,
- Rsh, RTSP, SAP/R3, SIP, SMB, SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5,
- SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth,
- VNC and XMPP.
+Asterisk, AFP, Cisco AAA, Cisco auth, Cisco enable, CVS, Firebird, FTP,
+HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY,
+HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST,
+HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MEMCACHED, MONGODB, MS-SQL, MYSQL, NCP, NNTP, Oracle Listener,
+Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, Radmin, RDP, Rexec, Rlogin,
+Rsh, RTSP, SAP/R3, SIP, SMB, SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5,
+SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth,
+VNC and XMPP.
 
 However the module engine for new services is very easy so it won't take a
 long time until even more services are supported.
@@ -58,25 +63,25 @@ Your help in writing, enhancing or fixing modules is highly appreciated!! :-)
 
 WHERE TO GET
 ------------
-You can always find the newest release/production version of hydra at its
-project page at https://github.com/vanhauser-thc/thc-hydra/releases
+You can always find the newest release/production version of CorpHydra at its
+project page at https://github.com/vanhauser-thc/thc-CorpHydra/releases
 If you are interested in the current development state, the public development
 repository is at Github:
-  svn co https://github.com/vanhauser-thc/thc-hydra
- or
-  git clone https://github.com/vanhauser-thc/thc-hydra
+svn co https://github.com/vanhauser-thc/thc-CorpHydra
+or
+git clone https://github.com/vanhauser-thc/thc-CorpHydra
 Use the development version at your own risk. It contains new features and
 new bugs. Things might not work!
 
 Alternatively (and easier) to can pull it as a docker container:
 ```
-docker pull vanhauser/hydra
+docker pull vanhauser/CorpHydra
 ```
 
 
 HOW TO COMPILE
 --------------
-To configure, compile and install hydra, just type:
+To configure, compile and install CorpHydra, just type:
 
 ```
 ./configure
@@ -94,9 +99,9 @@ for a few optional modules (note that some might not be available on your distri
 
 ```
 apt-get install libssl-dev libssh-dev libidn11-dev libpcre3-dev \
-                 libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev \
-                 firebird-dev libmemcached-dev libgpg-error-dev \
-                 libgcrypt11-dev libgcrypt20-dev
+libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev \
+firebird-dev libmemcached-dev libgpg-error-dev \
+libgcrypt11-dev libgcrypt20-dev
 ```
 
 This enables all optional modules and features with the exception of Oracle,
@@ -121,24 +126,24 @@ SUPPORTED PLATFORMS
 
 HOW TO USE
 ----------
-If you just enter `hydra`, you will see a short summary of the important
+If you just enter `CorpHydra`, you will see a short summary of the important
 options available.
-Type `./hydra -h` to see all available command line options.
+Type `./CorpHydra -h` to see all available command line options.
 
 Note that NO login/password file is included. Generate them yourself.
-A default password list is however present, use "dpl4hydra.sh" to generate
+A default password list is however present, use "dpl4CorpHydra.sh" to generate
 a list.
 
-For Linux users, a GTK GUI is available, try `./xhydra`
+For Linux users, a GTK GUI is available, try `./xCorpHydra`
 
 For the command line usage, the syntax is as follows:
- For attacking one target or a network, you can use the new "://" style:
-  hydra [some command line options] PROTOCOL://TARGET:PORT/MODULE-OPTIONS
- The old mode can be used for these too, and additionally if you want to
- specify your targets from a text file, you *must* use this one:
+For attacking one target or a network, you can use the new "://" style:
+CorpHydra [some command line options] PROTOCOL://TARGET:PORT/MODULE-OPTIONS
+The old mode can be used for these too, and additionally if you want to
+specify your targets from a text file, you *must* use this one:
 
 ```
-hydra [some command line options] [-s PORT] TARGET PROTOCOL [MODULE-OPTIONS]
+CorpHydra [some command line options] [-s PORT] TARGET PROTOCOL [MODULE-OPTIONS]
 ```
 
 Via the command line options you specify which logins to try, which passwords,
@@ -150,37 +155,37 @@ TARGET is the target you want to attack
 MODULE-OPTIONS are optional values which are special per PROTOCOL module
 
 FIRST - select your target
- you have three options on how to specify the target you want to attack:
- 1. a single target on the command line: just put the IP or DNS address in
- 2. a network range on the command line: CIDR specification like "192.168.0.0/24"
- 3. a list of hosts in a text file: one line per entry (see below)
+you have three options on how to specify the target you want to attack:
+1. a single target on the command line: just put the IP or DNS address in
+2. a network range on the command line: CIDR specification like "192.168.0.0/24"
+3. a list of hosts in a text file: one line per entry (see below)
 
 SECOND - select your protocol
- Try to avoid telnet, as it is unreliable to detect a correct or false login attempt.
- Use a port scanner to see which protocols are enabled on the target.
+Try to avoid telnet, as it is unreliable to detect a correct or false login attempt.
+Use a port scanner to see which protocols are enabled on the target.
 
 THIRD - check if the module has optional parameters
- hydra -U PROTOCOL
- e.g. hydra -U smtp
+CorpHydra -U PROTOCOL
+e.g. CorpHydra -U smtp
 
 FOURTH - the destination port
- this is optional, if no port is supplied the default common port for the
- PROTOCOL is used.
- If you specify SSL to use ("-S" option), the SSL common port is used by default.
+this is optional, if no port is supplied the default common port for the
+PROTOCOL is used.
+If you specify SSL to use ("-S" option), the SSL common port is used by default.
 
 
 If you use "://" notation, you must use "[" "]" brackets if you want to supply
 IPv6 addresses or CIDR ("192.168.0.0/24") notations to attack:
-  hydra [some command line options] ftp://[192.168.0.0/24]/
-  hydra [some command line options] -6 smtps://[2001:db8::1]/NTLM
+CorpHydra [some command line options] ftp://[192.168.0.0/24]/
+CorpHydra [some command line options] -6 smtps://[2001:db8::1]/NTLM
 
-Note that everything hydra does is IPv4 only!
+Note that everything CorpHydra does is IPv4 only!
 If you want to attack IPv6 addresses, you must add the "-6" command line option.
 All attacks are then IPv6 only!
 
 If you want to supply your targets via a text file, you can not use the ://
 notation but use the old style and just supply the protocol (and module options):
-  hydra [some command line options] -M targets.txt ftp
+CorpHydra [some command line options] -M targets.txt ftp
 You can also supply the port for each target entry by adding ":<port>" after a
 target entry in the file, e.g.:
 
@@ -208,16 +213,16 @@ target.com:21
 LOGINS AND PASSWORDS
 --------------------
 You have many options on how to attack with logins and passwords
-With -l for login and -p for password you tell hydra that this is the only
+With -l for login and -p for password you tell CorpHydra that this is the only
 login and/or password to try.
 With -L for logins and -P for passwords you supply text files with entries.
 e.g.:
 
 ```
-hydra -l admin -p password ftp://localhost/
-hydra -L default_logins.txt -p test ftp://localhost/
-hydra -l admin -P common_passwords.txt ftp://localhost/
-hydra -L logins.txt -P passwords.txt ftp://localhost/
+CorpHydra -l admin -p password ftp://localhost/
+CorpHydra -L default_logins.txt -p test ftp://localhost/
+CorpHydra -l admin -P common_passwords.txt ftp://localhost/
+CorpHydra -L logins.txt -P passwords.txt ftp://localhost/
 ```
 
 Additionally, you can try passwords based on the login via the "-e" option.
@@ -243,13 +248,13 @@ foo:bar
 ```
 
 This is a common default account style listing, that is also generated by the
-dpl4hydra.sh default account file generator supplied with hydra.
+dpl4CorpHydra.sh default account file generator supplied with CorpHydra.
 You use such a text file with the -C option - note that in this mode you
 can not use -l/-L/-p/-P options (-e nsr however you can).
 Example:
 
 ```
-hydra -C default_accounts.txt ftp://localhost/
+CorpHydra -C default_accounts.txt ftp://localhost/
 ```
 
 And finally, there is a bruteforce mode with the -x option (which you can not
@@ -273,7 +278,7 @@ Examples:
 Example:
 
 ```
-hydra -l ftp -x 3:3:a ftp://localhost/
+CorpHydra -l ftp -x 3:3:a ftp://localhost/
 ```
 
 SPECIAL OPTIONS FOR MODULES
@@ -284,11 +289,11 @@ Many modules use this, a few require it!
 
 To see the special option of a module, type:
 
-  hydra -U <module>
+CorpHydra -U <module>
 
 e.g.
 
-  ./hydra -U http-post-form
+./CorpHydra -U http-post-form
 
 The special options can be passed via the -m parameter, as 3rd command line
 option or in the service://target/option format.
@@ -296,60 +301,60 @@ option or in the service://target/option format.
 Examples (they are all equal):
 
 ```
-./hydra -l test -p test -m PLAIN 127.0.0.1 imap
-./hydra -l test -p test 127.0.0.1 imap PLAIN
-./hydra -l test -p test imap://127.0.0.1/PLAIN
+./CorpHydra -l test -p test -m PLAIN 127.0.0.1 imap
+./CorpHydra -l test -p test 127.0.0.1 imap PLAIN
+./CorpHydra -l test -p test imap://127.0.0.1/PLAIN
 ```
 
 RESTORING AN ABORTED/CRASHED SESSION
 ------------------------------------
-When hydra is aborted with Control-C, killed or crashes, it leaves a
-"hydra.restore" file behind which contains all necessary information to
+When CorpHydra is aborted with Control-C, killed or crashes, it leaves a
+"CorpHydra.restore" file behind which contains all necessary information to
 restore the session. This session file is written every 5 minutes.
-NOTE: the hydra.restore file can NOT be copied to a different platform (e.g.
+NOTE: the CorpHydra.restore file can NOT be copied to a different platform (e.g.
 from little endian to big endian, or from Solaris to AIX)
 
 HOW TO SCAN/CRACK OVER A PROXY
 ------------------------------
-The environment variable HYDRA_PROXY_HTTP defines the web proxy (this works
+The environment variable CorpHydra_PROXY_HTTP defines the web proxy (this works
 just for the http services!).
 The following syntax is valid:
 
 ```
-HYDRA_PROXY_HTTP="http://123.45.67.89:8080/"
-HYDRA_PROXY_HTTP="http://login:password@123.45.67.89:8080/"
-HYDRA_PROXY_HTTP="proxylist.txt"
+CorpHydra_PROXY_HTTP="http://123.45.67.89:8080/"
+CorpHydra_PROXY_HTTP="http://login:password@123.45.67.89:8080/"
+CorpHydra_PROXY_HTTP="proxylist.txt"
 ```
 
 The last example is a text file containing up to 64 proxies (in the same
 format definition as the other examples).
 
-For all other services, use the HYDRA_PROXY variable to scan/crack.
+For all other services, use the CorpHydra_PROXY variable to scan/crack.
 It uses the same syntax. eg:
 
 ```
-HYDRA_PROXY=[connect|socks4|socks5]://[login:password@]proxy_addr:proxy_port
+CorpHydra_PROXY=[connect|socks4|socks5]://[login:password@]proxy_addr:proxy_port
 ```
 
 for example:
 
 ```
-HYDRA_PROXY=connect://proxy.anonymizer.com:8000
-HYDRA_PROXY=socks4://auth:pw@127.0.0.1:1080
-HYDRA_PROXY=socksproxylist.txt
+CorpHydra_PROXY=connect://proxy.anonymizer.com:8000
+CorpHydra_PROXY=socks4://auth:pw@127.0.0.1:1080
+CorpHydra_PROXY=socksproxylist.txt
 ```
 
 ADDITIONAL HINTS
 ----------------
 * sort your password files by likelihood and use the -u option to find
-  passwords much faster!
+passwords much faster!
 * uniq your dictionary files! this can save you a lot of time :-)
-    cat words.txt | sort | uniq > dictionary.txt
+cat words.txt | sort | uniq > dictionary.txt
 * if you know that the target is using a password policy (allowing users
-  only to choose a password with a minimum length of 6, containing a least one
-  letter and one number, etc. use the tool pw-inspector which comes along
-  with the hydra package to reduce the password list:
-    cat dictionary.txt | pw-inspector -m 6 -c 2 -n > passlist.txt
+only to choose a password with a minimum length of 6, containing a least one
+letter and one number, etc. use the tool pw-inspector which comes along
+with the CorpHydra package to reduce the password list:
+cat dictionary.txt | pw-inspector -m 6 -c 2 -n > passlist.txt
 
 
 RESULTS OUTPUT
@@ -362,10 +367,10 @@ the format of the output can be specified.  Currently, these are supported:
 * `text`   - plain text format
 * `jsonv1` - JSON data using version 1.x of the schema (defined below).
 * `json`   - JSON data using the latest version of the schema, currently there
-             is only version 1.
+is only version 1.
 
 If using JSON output, the results file may not be valid JSON if there are
-serious errors in booting Hydra.
+serious errors in booting CorpHydra.
 
 
 JSON Schema
@@ -373,53 +378,53 @@ JSON Schema
 Here is an example of the JSON output.  Notes on some of the fields:
 
 * `errormessages` - an array of zero or more strings that are normally printed
-   to stderr at the end of the Hydra's run.  The text is very free form.
-* `success` - indication if Hydra ran correctly without error (**NOT** if
-   passwords were detected).  This parameter is either the JSON value `true`
-   or `false` depending on completion.  
+to stderr at the end of the CorpHydra's run.  The text is very free form.
+* `success` - indication if CorpHydra ran correctly without error (**NOT** if
+passwords were detected).  This parameter is either the JSON value `true`
+or `false` depending on completion.  
 * `quantityfound` - How many username+password combinations discovered.
 * `jsonoutputversion` - Version of the schema, 1.00, 1.01, 1.11, 2.00,
-   2.03, etc.  Hydra will make second tuple of the version to always be two
-   digits to make it easier for downstream processors (as opposed to v1.1 vs
-   v1.10).  The minor-level versions are additive, so 1.02 will contain more
-   fields than version 1.00 and will be backward compatible.  Version 2.x will
-   break something from version 1.x output.  
+2.03, etc.  CorpHydra will make second tuple of the version to always be two
+digits to make it easier for downstream processors (as opposed to v1.1 vs
+v1.10).  The minor-level versions are additive, so 1.02 will contain more
+fields than version 1.00 and will be backward compatible.  Version 2.x will
+break something from version 1.x output.  
 
 Version 1.00 example:
 ```
 {
-    "errormessages": [
-        "[ERROR] Error Message of Something",
-        "[ERROR] Another Message",
-        "These are very free form"
-    ],
-    "generator": {
-        "built": "2021-03-01 14:44:22",
-        "commandline": "hydra -b jsonv1 -o results.json ... ...",
-        "jsonoutputversion": "1.00",
-        "server": "127.0.0.1",
-        "service": "http-post-form",
-        "software": "Hydra",
-        "version": "v8.5"
-    },
-    "quantityfound": 2,
-    "results": [
-        {
-            "host": "127.0.0.1",
-            "login": "bill@example.com",
-            "password": "bill",
-            "port": 9999,
-            "service": "http-post-form"
-        },
-        {
-            "host": "127.0.0.1",
-            "login": "joe@example.com",
-            "password": "joe",
-            "port": 9999,
-            "service": "http-post-form"
-        }
-    ],
-    "success": false
+"errormessages": [
+"[ERROR] Error Message of Something",
+"[ERROR] Another Message",
+"These are very free form"
+],
+"generator": {
+"built": "2021-03-01 14:44:22",
+"commandline": "CorpHydra -b jsonv1 -o results.json ... ...",
+"jsonoutputversion": "1.00",
+"server": "127.0.0.1",
+"service": "http-post-form",
+"software": "CorpHydra",
+"version": "v8.5"
+},
+"quantityfound": 2,
+"results": [
+{
+"host": "127.0.0.1",
+"login": "bill@example.com",
+"password": "bill",
+"port": 9999,
+"service": "http-post-form"
+},
+{
+"host": "127.0.0.1",
+"login": "joe@example.com",
+"password": "joe",
+"port": 9999,
+"service": "http-post-form"
+}
+],
+"success": false
 }
 ```
 
@@ -441,7 +446,7 @@ Run against a SuSE Linux 7.2 on localhost with a "-C FILE" containing
 times (only for "1 task" just once), and the average noted down.
 
 ```
-			P A R A L L E L    T A S K S
+P A R A L L E L    T A S K S
 SERVICE	1	4	8	16	32	50	64	100	128
 ------- --------------------------------------------------------------------
 telnet	23:20	5:58	2:58	1:34	1:05	0:33	0:45*	0:25*	0:55*
@@ -456,21 +461,21 @@ Note: telnet timings can be VERY different for 64 to 128 tasks! e.g. with
 The reason for this is unknown...
 
 guesses per task (rounded up):
-	
-  295	74	38	19	10	6	5	3	3
+
+295	74	38	19	10	6	5	3	3
 
 guesses possible per connect (depends on the server software and config):
-	
-  telnet	4
-	ftp	6
-	pop3	1
-	imap	3
+
+telnet	4
+ftp	6
+pop3	1
+imap	3
 
 
 
 BUGS & FEATURES
 ---------------
-Hydra:
+CorpHydra:
 Email me or David if you find bugs or if you have written a new module.
 vh@thc.org (and put "antispam" in the subject line)
 
