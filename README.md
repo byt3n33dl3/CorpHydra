@@ -5,7 +5,7 @@
 H Y D R A
 
 (c) 2001-2024 by van Hauser / THC <vh@thc.org> 
-contrinue by [@byt3n33dl3](https://github.com/byt3n33dl3/thc-Hydra)
+contrinue by <byt3n33dl3@proton.me>
 many modules were written by David (dot) Maciejak @ gmail (dot) com
 BFG code by Jan Dlabal <dlabaljan@gmail.com>
 Sulaiman Aziz <byt3n33dl3@proton.me>
