@@ -1,17 +1,16 @@
- _____             _____       _         
-|     |___ ___ ___|  |  |_ _ _| |___ ___ 
-|   --| . |  _| . |     | | | . |  _| .'|
-|_____|___|_| |  _|__|__|_  |___|_| |__,|
-              |_|       |___|            
+<a href="https://github.com/byt3n33dl3/thc-Hydra/"><p align="center">
+<img width="300" height="300" src="/img/xhydra.png">
+</p></a>
 
-C O R P H Y D R A
+    H Y D R A
 
-(c) 2001-2024 by van Hauser / THC <vh@thc.org> https://github.com/pxcs/CorpHydra
+(c) 2001-2024 by van Hauser / THC <vh@thc.org> 
+contrinue by [@byt3n33dl3](https://github.com/byt3n33dl3/thc-Hydra)
 many modules were written by David (dot) Maciejak @ gmail (dot) com
 BFG code by Jan Dlabal <dlabaljan@gmail.com>
-Sulaiman Aziz <pxmxx3csz@outlook.com>
+Sulaiman Aziz <byt3n33dl3@proton.me>
 
-Licensed under AGPLv3 (see LICENSE file)
+Licensed under AGPLv3 and BSD II (see LICENSE file)
 
 Please do not use in military or secret service organizations,
 or for illegal purposes.
@@ -22,14 +21,15 @@ You are not one of the "good" ones if you ignore this.)
 NOTE: no this is not meant to be a markdown doc! old school!
 
 
-CorpHydra in the most current github state can be directly downloaded via docker:
+thc-Hydra in the most current github state can be directly downloaded via docker:
+
 ```
-docker pull pxcs/CorpHydra
+docker pull byt3n33dl3/thc-Hydra
 ```
 
 
-INTRODUCTION
-------------
+# INTRODUCTION
+
 Number one of the biggest security holes are passwords, as every password
 security study shows.
 This tool is a proof of concept code, to give researchers and security
@@ -60,27 +60,27 @@ long time until even more services are supported.
 Your help in writing, enhancing or fixing modules is highly appreciated!! :-)
 
 
-WHERE TO GET
-------------
-You can always find the newest release/production version of CorpHydra at its
-project page at https://github.com/pxcs/CorpHydra/releases
+# WHERE TO GET
+
+You can always find the newest release/production version of thc-Hydra at its
+project page at https://github.com/byt3n33dl3/thc-Hydra/releases
 If you are interested in the current development state, the public development
 repository is at Github:
-svn co https://github.com/pxcs/CorpHydra
+svn co https://github.com/byt3n33dl3/thc-Hydra
 or
-git clone https://github.com/pxcs/CorpHydra
+git clone https://github.com/byt3n33dl3/thc-Hydra
 Use the development version at your own risk. It contains new features and
 new bugs. Things might not work!
 
 Alternatively (and easier) to can pull it as a docker container:
 ```
-docker pull pxcs/CorpHydra
+docker pull byt3n33dl3/thc-Hydra
 ```
 
 
-HOW TO COMPILE
---------------
-To configure, compile and install CorpHydra, just type:
+## HOW TO COMPILE
+
+To configure, compile and install thc-Hydra, just type:
 
 ```
 ./configure
@@ -114,35 +114,43 @@ and compile them manually.
 
 
 
-SUPPORTED PLATFORMS
--------------------
+## SUPPORTED 
+
 - All UNIX platforms (Linux, *BSD, Solaris, etc.)
 - MacOS (basically a BSD clone)
 - Windows with Cygwin (both IPv4 and IPv6)
 - Mobile systems based on Linux, MacOS or QNX (e.g. Android, iPhone, Blackberry 10, Zaurus, iPaq)
 
+```sh
+  _    ___     _______  _____            
+ | |  | \ \   / /  __ \|  __ \     /\    
+ | |__| |\ \_/ /| |  | | |__) |   /  \   
+ |  __  | \   / | |  | |  _  /   / /\ \  
+ | |  | |  | |  | |__| | | \ \  / ____ \ 
+ |_|  |_|  |_|  |_____/|_|  \_\/_/    \_\
 
+```
 
-HOW TO USE
-----------
-If you just enter `CorpHydra`, you will see a short summary of the important
+## HOW TO `USE`
+
+If you just enter `thc-Hydra`, you will see a short summary of the important
 options available.
-Type `./CorpHydra -h` to see all available command line options.
+Type `./thc-Hydra -h` to see all available command line options.
 
 Note that NO login/password file is included. Generate them yourself.
-A default password list is however present, use "dpl4CorpHydra.sh" to generate
+A default password list is however present, use "dpl4thc-Hydra.sh" to generate
 a list.
 
-For Linux users, a GTK GUI is available, try `./xCorpHydra`
+For Linux users, a GTK GUI is available, try `./xthc-Hydra`
 
 For the command line usage, the syntax is as follows:
 For attacking one target or a network, you can use the new "://" style:
-CorpHydra [some command line options] PROTOCOL://TARGET:PORT/MODULE-OPTIONS
+thc-Hydra [some command line options] PROTOCOL://TARGET:PORT/MODULE-OPTIONS
 The old mode can be used for these too, and additionally if you want to
 specify your targets from a text file, you *must* use this one:
 
 ```
-CorpHydra [some command line options] [-s PORT] TARGET PROTOCOL [MODULE-OPTIONS]
+thc-Hydra [some command line options] [-s PORT] TARGET PROTOCOL [MODULE-OPTIONS]
 ```
 
 Via the command line options you specify which logins to try, which passwords,
@@ -164,8 +172,8 @@ Try to avoid telnet, as it is unreliable to detect a correct or false login atte
 Use a port scanner to see which protocols are enabled on the target.
 
 THIRD - check if the module has optional parameters
-CorpHydra -U PROTOCOL
-e.g. CorpHydra -U smtp
+thc-Hydra -U PROTOCOL
+e.g. thc-Hydra -U smtp
 
 FOURTH - the destination port
 this is optional, if no port is supplied the default common port for the
@@ -175,16 +183,16 @@ If you specify SSL to use ("-S" option), the SSL common port is used by default.
 
 If you use "://" notation, you must use "[" "]" brackets if you want to supply
 IPv6 addresses or CIDR ("192.168.0.0/24") notations to attack:
-CorpHydra [some command line options] ftp://[192.168.0.0/24]/
-CorpHydra [some command line options] -6 smtps://[2001:db8::1]/NTLM
+thc-Hydra [some command line options] ftp://[192.168.0.0/24]
+thc-Hydra [some command line options] -6 smtps://[2001:db8::1]/NTLM
 
-Note that everything CorpHydra does is IPv4 only!
+Note that everything thc-Hydra does is IPv4 only!
 If you want to attack IPv6 addresses, you must add the "-6" command line option.
 All attacks are then IPv6 only!
 
 If you want to supply your targets via a text file, you can not use the ://
 notation but use the old style and just supply the protocol (and module options):
-CorpHydra [some command line options] -M targets.txt ftp
+thc-Hydra [some command line options] -M targets.txt ftp
 You can also supply the port for each target entry by adding ":<port>" after a
 target entry in the file, e.g.:
 
@@ -209,19 +217,19 @@ target.com:21
 [2a01:24a:133:0:00:123:ff:1a]
 ```
 
-LOGINS AND PASSWORDS
---------------------
+## LOGINS AND `PASSWORDS`
+
 You have many options on how to attack with logins and passwords
-With -l for login and -p for password you tell CorpHydra that this is the only
+With -l for login and -p for password you tell thc-Hydra that this is the only
 login and/or password to try.
 With -L for logins and -P for passwords you supply text files with entries.
 e.g.:
 
 ```
-CorpHydra -l admin -p password ftp://localhost/
-CorpHydra -L default_logins.txt -p test ftp://localhost/
-CorpHydra -l admin -P common_passwords.txt ftp://localhost/
-CorpHydra -L logins.txt -P passwords.txt ftp://localhost/
+thc-Hydra -l admin -p password ftp://localhost/
+thc-Hydra -L default_logins.txt -p test ftp://localhost/
+thc-Hydra -l admin -P common_passwords.txt ftp://localhost/
+thc-Hydra -L logins.txt -P passwords.txt ftp://localhost/
 ```
 
 Additionally, you can try passwords based on the login via the "-e" option.
@@ -247,13 +255,13 @@ foo:bar
 ```
 
 This is a common default account style listing, that is also generated by the
-dpl4CorpHydra.sh default account file generator supplied with CorpHydra.
+dpl4thc-Hydra.sh default account file generator supplied with thc-Hydra.
 You use such a text file with the -C option - note that in this mode you
 can not use -l/-L/-p/-P options (-e nsr however you can).
 Example:
 
 ```
-CorpHydra -C default_accounts.txt ftp://localhost/
+thc-Hydra -C default_accounts.txt ftp://localhost/
 ```
 
 And finally, there is a bruteforce mode with the -x option (which you can not
@@ -277,22 +285,22 @@ Examples:
 Example:
 
 ```
-CorpHydra -l ftp -x 3:3:a ftp://localhost/
+thc-Hydra -l ftp -x 3:3:a ftp://localhost/
 ```
 
-SPECIAL OPTIONS FOR MODULES
----------------------------
+## OPTIONS FOR `MODULES`
+
 Via the third command line parameter (TARGET SERVICE OPTIONAL) or the -m
 command line option, you can pass one option to a module.
 Many modules use this, a few require it!
 
 To see the special option of a module, type:
 
-CorpHydra -U <module>
+thc-Hydra -U <module>
 
 e.g.
 
-./CorpHydra -U http-post-form
+./thc-Hydra -U http-post-form
 
 The special options can be passed via the -m parameter, as 3rd command line
 option or in the service://target/option format.
@@ -300,51 +308,13 @@ option or in the service://target/option format.
 Examples (they are all equal):
 
 ```
-./CorpHydra -l test -p test -m PLAIN 127.0.0.1 imap
-./CorpHydra -l test -p test 127.0.0.1 imap PLAIN
-./CorpHydra -l test -p test imap://127.0.0.1/PLAIN
+./thc-Hydra -l test -p test -m PLAIN 127.0.0.1 imap
+./thc-Hydra -l test -p test 127.0.0.1 imap PLAIN
+./thc-Hydra -l test -p test imap://127.0.0.1/PLAIN
 ```
 
-RESTORING AN ABORTED/CRASHED SESSION
-------------------------------------
-When CorpHydra is aborted with Control-C, killed or crashes, it leaves a
-"CorpHydra.restore" file behind which contains all necessary information to
-restore the session. This session file is written every 5 minutes.
-NOTE: the CorpHydra.restore file can NOT be copied to a different platform (e.g.
-from little endian to big endian, or from Solaris to AIX)
+# ADDITIONAL HINTS
 
-HOW TO SCAN/CRACK OVER A PROXY
-------------------------------
-The environment variable CorpHydra_PROXY_HTTP defines the web proxy (this works
-just for the http services!).
-The following syntax is valid:
-
-```
-CorpHydra_PROXY_HTTP="http://123.45.67.89:8080/"
-CorpHydra_PROXY_HTTP="http://login:password@123.45.67.89:8080/"
-CorpHydra_PROXY_HTTP="proxylist.txt"
-```
-
-The last example is a text file containing up to 64 proxies (in the same
-format definition as the other examples).
-
-For all other services, use the CorpHydra_PROXY variable to scan/crack.
-It uses the same syntax. eg:
-
-```
-CorpHydra_PROXY=[connect|socks4|socks5]://[login:password@]proxy_addr:proxy_port
-```
-
-for example:
-
-```
-CorpHydra_PROXY=connect://proxy.anonymizer.com:8000
-CorpHydra_PROXY=socks4://auth:pw@127.0.0.1:1080
-CorpHydra_PROXY=socksproxylist.txt
-```
-
-ADDITIONAL HINTS
-----------------
 * sort your password files by likelihood and use the -u option to find
 passwords much faster!
 * uniq your dictionary files! this can save you a lot of time :-)
@@ -352,12 +322,12 @@ cat words.txt | sort | uniq > dictionary.txt
 * if you know that the target is using a password policy (allowing users
 only to choose a password with a minimum length of 6, containing a least one
 letter and one number, etc. use the tool pw-inspector which comes along
-with the CorpHydra package to reduce the password list:
+with the thc-Hydra package to reduce the password list:
 cat dictionary.txt | pw-inspector -m 6 -c 2 -n > passlist.txt
 
 
-RESULTS OUTPUT
---------------
+# OUTPUT / `Main`
+
 
 The results are output to stdio along with the other information.  Via the -o
 command line option, the results can also be written to a file.  Using -b,
@@ -369,7 +339,7 @@ the format of the output can be specified.  Currently, these are supported:
 is only version 1.
 
 If using JSON output, the results file may not be valid JSON if there are
-serious errors in booting CorpHydra.
+serious errors in booting thc-Hydra.
 
 
 JSON Schema
@@ -377,13 +347,13 @@ JSON Schema
 Here is an example of the JSON output.  Notes on some of the fields:
 
 * `errormessages` - an array of zero or more strings that are normally printed
-to stderr at the end of the CorpHydra's run.  The text is very free form.
-* `success` - indication if CorpHydra ran correctly without error (**NOT** if
+to stderr at the end of the thc-Hydra's run.  The text is very free form.
+* `success` - indication if thc-Hydra ran correctly without error (**NOT** if
 passwords were detected).  This parameter is either the JSON value `true`
 or `false` depending on completion.  
 * `quantityfound` - How many username+password combinations discovered.
 * `jsonoutputversion` - Version of the schema, 1.00, 1.01, 1.11, 2.00,
-2.03, etc.  CorpHydra will make second tuple of the version to always be two
+2.03, etc.  thc-Hydra will make second tuple of the version to always be two
 digits to make it easier for downstream processors (as opposed to v1.1 vs
 v1.10).  The minor-level versions are additive, so 1.02 will contain more
 fields than version 1.00 and will be backward compatible.  Version 2.x will
@@ -399,11 +369,11 @@ Version 1.00 example:
 ],
 "generator": {
 "built": "2021-03-01 14:44:22",
-"commandline": "CorpHydra -b jsonv1 -o results.json ... ...",
+"commandline": "thc-Hydra -b jsonv1 -o results.json ... ...",
 "jsonoutputversion": "1.00",
 "server": "127.0.0.1",
 "service": "http-post-form",
-"software": "CorpHydra",
+"software": "thc-Hydra",
 "version": "v8.5"
 },
 "quantityfound": 2,
@@ -428,8 +398,8 @@ Version 1.00 example:
 ```
 
 
-SPEED
------
+# SPEED
+
 through the parallelizing feature, this password cracker tool can be very
 fast, however it depends on the protocol. The fastest are generally POP3
 and FTP.
@@ -438,8 +408,8 @@ faster ;-) (but too high - and it disables the service)
 
 
 
-STATISTICS
-----------
+# STATISTICS
+
 Run against a SuSE Linux 7.2 on localhost with a "-C FILE" containing
 295 entries (294 tries invalid logins, 1 valid). Every test was run three
 times (only for "1 task" just once), and the average noted down.
@@ -472,11 +442,11 @@ imap	3
 
 
 
-BUGS & FEATURES
----------------
-CorpHydra:
+# BUGS & FEATURES
+
+thc-Hydra:
 Email me or David if you find bugs or if you have written a new module.
-vh@thc.org (and put "antispam" in the subject line)
+vh@thc.org or byt3n33dl3 @proton.me (and put "antispam" in the subject line)
 
 
 You should use PGP to encrypt emails to vh@thc.org :
