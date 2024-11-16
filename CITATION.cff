@@ -1,16 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-  - given-names: Marc
-    family-names: Heuse
-    name-particle: "van Hauser"
-    email: vh@thc.org
-    affiliation: The Hacker's Choice
-title: "hydra"
-version: 9.2
+authors: van Hauser
+  - given-names: Sulaiman
+    family-names: 
+    name-particle: "byt3n33dl3"
+    email: byt3n33dl3@proton.me
+    affiliation: Offensive Security
+title: "Hydra"
+version: 9.6.0
 type: software
 date-released: 2021-03-15
-url: "https://github.com/vanhauser-thc/thc-hydra"
+url: "https://github.com/byt3n33dl3c/thc-Hydra"
 keywords:
   - scanning
   - passwords

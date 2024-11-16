@@ -3,10 +3,10 @@ FROM debian:buster-slim
 ARG HYDRA_VERSION="github"
 
 LABEL \
-    org.opencontainers.image.url="https://github.com/vanhauser-thc/thc-hydra" \
-    org.opencontainers.image.source="https://github.com/vanhauser-thc/thc-hydra" \
+    org.opencontainers.image.url="https://github.com/byt3n33dl3/thc-Hydra" \
+    org.opencontainers.image.source="https://github.com/byt3n33dl3/thc-Hydra" \
     org.opencontainers.image.version="$HYDRA_VERSION" \
-    org.opencontainers.image.vendor="vanhauser-thc" \
+    org.opencontainers.image.vendor="byt3n33dl3" \
     org.opencontainers.image.title="hydra" \
     org.opencontainers.image.licenses="GNU AFFERO GENERAL PUBLIC LICENSE"
 
