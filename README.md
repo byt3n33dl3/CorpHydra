@@ -1,5 +1,5 @@
 <a href="https://github.com/byt3n33dl3/thc-Hydra/"><p align="center">
-<img width="300" height="300" src="/img/xhydra.png">
+<img width="250" height="250" src="/img/xhydra.png">
 </p></a>
 
 H Y D R A
@@ -10,7 +10,7 @@ many modules were written by David (dot) Maciejak @ gmail (dot) com
 BFG code by Jan Dlabal <dlabaljan@gmail.com>
 Sulaiman Aziz <byt3n33dl3@proton.me>
 
-Licensed under AGPLv3 and BSD II (see LICENSE file)
+Licensed under `AGPLv3` and `BSD II` : see LICENSE file
 
 Please do not use in military or secret service organizations,
 or for illegal purposes.
@@ -129,7 +129,7 @@ and compile them manually.
  | |  | |  | |  | |__| | | \ \  / ____ \ 
  |_|  |_|  |_|  |_____/|_|  \_\/_/    \_\
  
-     B R U T E F O R C E R L O G O N
+     L O G O N B R U T E F O R C E R
 ```
 
 ## HOW TO `USE`
