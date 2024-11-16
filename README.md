@@ -2,7 +2,7 @@
 <img width="300" height="300" src="/img/xhydra.png">
 </p></a>
 
-    H Y D R A
+H Y D R A
 
 (c) 2001-2024 by van Hauser / THC <vh@thc.org> 
 contrinue by [@byt3n33dl3](https://github.com/byt3n33dl3/thc-Hydra)
@@ -48,7 +48,7 @@ FreeBSD/OpenBSD, QNX (Blackberry 10) and MacOS.
 Currently this tool supports the following protocols:
 Asterisk, AFP, Cisco AAA, Cisco auth, Cisco enable, CVS, Firebird, FTP,
 HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY,
-HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST,
+HTTPs-FORM-GET, HTTPs-FORM-POST, HTTPs-GET, HTTPs-HEAD, HTTPs-POST,
 HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MEMCACHED, MONGODB, MS-SQL, MYSQL, NCP, NNTP, Oracle Listener,
 Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, Radmin, RDP, Rexec, Rlogin,
 Rsh, RTSP, SAP/R3, SIP, SMB, SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5,
@@ -63,7 +63,7 @@ Your help in writing, enhancing or fixing modules is highly appreciated!! :-)
 # WHERE TO GET
 
 You can always find the newest release/production version of thc-Hydra at its
-project page at https://github.com/byt3n33dl3/thc-Hydra/releases
+project page at [Release](https://github.com/byt3n33dl3/thc-Hydra/releases)
 If you are interested in the current development state, the public development
 repository is at Github:
 svn co https://github.com/byt3n33dl3/thc-Hydra
@@ -89,7 +89,7 @@ make install
 ```
 
 If you want the ssh module, you have to setup libssh (not libssh2!) on your
-system,  get it from https://www.libssh.org, for ssh v1 support you also need
+system,  get it from [libssh](https://www.libssh.org), for ssh v1 support you also need
 to add "-DWITH_SSH1=On" option in the cmake command line.
 IMPORTANT: If you compile on MacOS then you must do this - do not install libssh via brew!
 
@@ -446,7 +446,7 @@ imap	3
 
 thc-Hydra:
 Email me or David if you find bugs or if you have written a new module.
-vh@thc.org or byt3n33dl3 @proton.me (and put "antispam" in the subject line)
+vh@thc.org or byt3n33dl3@proton.me (and put "antispam" in the subject line)
 
 
 You should use PGP to encrypt emails to vh@thc.org :
