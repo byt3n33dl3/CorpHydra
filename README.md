@@ -23,7 +23,7 @@ NOTE: no this is not meant to be a markdown doc! old school!
 
 thc-Hydra in the most current github state can be directly downloaded via docker:
 
-```
+```docker
 docker pull byt3n33dl3/thc-Hydra
 ```
 
@@ -66,9 +66,9 @@ You can always find the newest release/production version of thc-Hydra at its
 project page at [Release](https://github.com/byt3n33dl3/thc-Hydra/releases)
 If you are interested in the current development state, the public development
 repository is at Github:
-svn co https://github.com/byt3n33dl3/thc-Hydra
+svn co [Repo](https://github.com/byt3n33dl3/thc-Hydra)
 or
-git clone https://github.com/byt3n33dl3/thc-Hydra
+git clone [Repo](https://github.com/byt3n33dl3/thc-Hydra)
 Use the development version at your own risk. It contains new features and
 new bugs. Things might not work!
 
@@ -82,7 +82,7 @@ docker pull byt3n33dl3/thc-Hydra
 
 To configure, compile and install thc-Hydra, just type:
 
-```
+```docker
 ./configure
 make
 make install
@@ -96,7 +96,7 @@ IMPORTANT: If you compile on MacOS then you must do this - do not install libssh
 If you use Ubuntu/Debian, this will install supplementary libraries needed
 for a few optional modules (note that some might not be available on your distribution):
 
-```
+```docker
 apt-get install libssl-dev libssh-dev libidn11-dev libpcre3-dev \
 libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev \
 firebird-dev libmemcached-dev libgpg-error-dev \
@@ -128,7 +128,8 @@ and compile them manually.
  |  __  | \   / | |  | |  _  /   / /\ \  
  | |  | |  | |  | |__| | | \ \  / ____ \ 
  |_|  |_|  |_|  |_____/|_|  \_\/_/    \_\
-
+ 
+     B R U T E F O R C E R L O G O N
 ```
 
 ## HOW TO `USE`
