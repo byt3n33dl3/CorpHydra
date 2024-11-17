@@ -131,7 +131,7 @@ and compile them manually.
  | |  | |  | |  | |__| | | \ \  / ____ \ 
  |_|  |_|  |_|  |_____/|_|  \_\/_/    \_\
  
-     L O G O N B R U T E F O R C E R
+        L O G O N F O R C E R
 ```
 
 ## HOW TO `USE`
@@ -449,7 +449,7 @@ imap	3
 
 thc-Hydra:
 Email me or David if you find bugs or if you have written a new module.
-vh@thc.org or byt3n33dl3@proton.me (and put "antispam" in the subject line)
+vh@thc.org or [byt3n33dl3@pm.me](mailto:byt3n33dl3@proton.me) (and put "antispam" in the subject line)
 
 
 You should use PGP to encrypt emails to vh@thc.org :
