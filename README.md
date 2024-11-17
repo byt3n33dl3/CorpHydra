@@ -7,10 +7,10 @@
 <p></div>
 
 (c) 2001-2024 by van Hauser / THC <vh@thc.org> 
-continued by <byt3n33dl3@proton.me>
-many modules were written by David (dot) Maciejak @ gmail (dot) com
-BFG code by Jan Dlabal <dlabaljan@gmail.com>
-Sulaiman Aziz <byt3n33dl3@proton.me>
+continued by [byt3n33dl3@pm.me](mailto:byt3n33dl3@proton.me)
+many modules were written by <david.maciejak@gmail.com>
+BFG code by Jan Dlabal <dlabaljan@gmail.com> and
+Sulaiman Aziz [byt3n33dl3@pm.me](mailto:byt3n33dl3@proton.me)
 
 Licensed under `AGPLv3` and `BSD II` : see LICENSE file
 
