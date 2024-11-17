@@ -10,13 +10,13 @@ LOCAL_LDFLAGS:=-Wl,--gc-sections
 
 LOCAL_C_INCLUDES:= \
 	$(LOCAL_PATH)\
-	external/openssl/include\
-	external/libssh/include\
-	external/libidn/lib\
-	external/subversion/subversion/include\
-	external/apr/include\
-	external/libncp/include\
-	external/libpcre
+	src/openssl/include\
+	src/libssh/include\
+	src/libidn/lib\
+	src/subversion/subversion/include\
+	src/apr/include\
+	src/libncp/include\
+	src/libpcre
 	
 LOCAL_SRC_FILES:= \
 	bfg.c\
@@ -99,6 +99,6 @@ LOCAL_SHARED_LIBRARIES := \
 	libsqlite\
 	libexpat
 					
-LOCAL_MODULE:= hydra
+LOCAL_MODULE:= Hydra
 
 include $(BUILD_EXECUTABLE)
