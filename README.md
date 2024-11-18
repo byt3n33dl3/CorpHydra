@@ -65,12 +65,12 @@ Your help in writing, enhancing or fixing modules is highly appreciated!! :-)
 # WHERE TO GET
 
 You can always find the newest release/production version of thc-Hydra at its
-project page at [Release](https://github.com/byt3n33dl3/thc-Hydra/releases)
+project page at [release](https://github.com/byt3n33dl3/thc-Hydra/releases)
 If you are interested in the current development state, the public development
 repository is at Github:
-svn co [Repo](https://github.com/byt3n33dl3/thc-Hydra)
+svn co [repo](https://github.com/byt3n33dl3/thc-Hydra)
 or
-git clone [Repo](https://github.com/byt3n33dl3/thc-Hydra)
+git clone [repo](https://github.com/byt3n33dl3/thc-Hydra)
 Use the development version at your own risk. It contains new features and
 new bugs. Things might not work!
 
