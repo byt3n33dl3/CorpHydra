@@ -118,7 +118,7 @@ and compile them manually.
 
 ## SUPPORTED 
 
-- All UNIX platforms (Linux, *BSD, Solaris, etc.)
+- All UNIX platforms (Linux, BSD, Solaris, etc.)
 - MacOS (basically a BSD clone)
 - Windows with Cygwin (both IPv4 and IPv6)
 - Mobile systems based on Linux, MacOS or QNX (e.g. Android, iPhone, Blackberry 10, Zaurus, iPaq)
@@ -303,7 +303,7 @@ Hydra -U <module>
 
 e.g.
 
-./thc-Hydra -U http-post-form
+./Hydra -U http-post-form
 
 The special options can be passed via the -m parameter, as 3rd command line
 option or in the service://target/option format.
@@ -377,7 +377,7 @@ Version 1.00 example:
 "server": "127.0.0.1",
 "service": "http-post-form",
 "software": "thc-Hydra",
-"version": "v8.5"
+"version": "v9.6"
 },
 "quantityfound": 2,
 "results": [
@@ -392,7 +392,7 @@ Version 1.00 example:
 "host": "127.0.0.1",
 "login": "joe@example.com",
 "password": "joe",
-"port": 9999,
+"port": 4444,
 "service": "http-post-form"
 }
 ],
