@@ -452,4 +452,4 @@ Email me or David or Sulaiman if you find bugs or if you have written a new modu
 vh@thc.org or [byt3n33dl3@pm.me](mailto:byt3n33dl3@proton.me) (and put "antispam" in the subject line)
 
 
-You should use PGP to encrypt emails to <vh@thc.org>
+You should use [PGP](https://github.com/byt3n33dl3/thc-Hydra/blob/master/vh-thc-key.md) to encrypt emails to <vh@thc.org>
