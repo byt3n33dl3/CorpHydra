@@ -1,7 +1,8 @@
 {
   ".github": false,
   "src": false,
+  "gtk": false,
   "remote_images": {
-    "hydra": "ghcr.io/byt3n33dl3/thc-Hydra:v9.6.1"
+    "Athena": "ghcr.io/byt3n33dl3/thc-Hydra:v9.6.1"
   }
 }
