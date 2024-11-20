@@ -1,0 +1,7 @@
+{
+  "src": false,
+  "gtk": false,
+  "remote_images": {
+    "thc-Hydra": "ghcr.io/byt3n33dl3/thc-Hydra:v9.6.1"
+  }
+}
