@@ -1,7 +1,10 @@
 {
-  "src": false,
-  "gtk": false,
+  "exclude_payload_type": false,
+  "exclude_c2_profiles": false,
+  "exclude_documentation_payload": false,
+  "exclude_documentation_c2": false,
+  "exclude_agent_icons": false,
   "remote_images": {
-    "thc-Hydra": "ghcr.io/byt3n33dl3/thc-Hydra:v9.6.1"
+    "athena": "ghcr.io/byt3n33dl3/thc-hydra:v9.6.1"
   }
 }
