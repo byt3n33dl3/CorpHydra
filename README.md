@@ -23,7 +23,7 @@ You are not one of the "good" ones if you ignore this.)
 NOTE: no this is not meant to be a markdown doc! old school!
 
 
-thc-Hydra in the most current github state can be directly downloaded via docker:
+thc-Hydra in the most current github state can be directly downloaded via `Docker`:
 
 ```docker
 docker pull byt3n33dl3/thc-Hydra
