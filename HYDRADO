@@ -1,1 +1,2 @@
-- ./src/XHydra.c
+- ./src/hydra-httpx.c
+- ./src/hydra-httpx.h

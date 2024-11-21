@@ -1,3 +1,3 @@
 # thc-Hydra / `Naga`
 
->- Version : 9.6.0
+>- Version : 9.6.1
