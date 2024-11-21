@@ -1,2 +1,4 @@
 - ./src/hydra-httpx.c
 - ./src/hydra-httpx.h
+
+Need update on Custom output (JSON Schema)
